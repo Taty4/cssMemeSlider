@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Meme Slider</h1>
-      <p>Pure Css <span class="header-circle"></span> No Javascript</p>
+      <p>
+        Pure <span class="accent-orange">Css</span>
+        <span class="header-circle"></span>
+        <span class="accent-brown">No</span> Javascript
+      </p>
     </header>
     <main>
-      <div class="controls-input">
-        <input type="radio" name="control" id="slide-1" />
-        <input type="radio" name="control" id="slide-2" />
-        <input type="radio" name="control" id="slide-3" />
-        <input type="radio" name="control" id="slide-4" />
-        <input type="radio" name="control" id="slide-5" />
-      </div>
+      <input type="radio" name="control" id="slide-1" checked />
+      <input type="radio" name="control" id="slide-2" />
+      <input type="radio" name="control" id="slide-3" />
+      <input type="radio" name="control" id="slide-4" />
+      <input type="radio" name="control" id="slide-5" />
       <div class="slider-bgc">
         <div class="slider-visible">
           <div class="slider-track">
@@ -30,9 +32,15 @@
           </div>
         </div>
       </div>
-      <div class="wrappwer-texts-controls">
+      <div class="wrapper-texts-controls">
         <div class="texts-visible">
-          <div class="texts-trsck"></div>
+          <div class="texts-track">
+            <p>Нигде - лучший работодатель! 😎</p>
+            <p>И так всегда 😫</p>
+            <p>Даже котик не вывозит 🤷‍♂️</p>
+            <p>Теперь и вы видели 😂</p>
+            <p>Лучшее успокоительное, правда ведь? 😃</p>
+          </div>
         </div>
         <div class="controls-label">
           <label for="slide-1">
@@ -53,7 +61,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p>
         Made in <a href="https://rs.school/" target="_blank">RSschool</a> by
         <a href="https://github.com/Taty4">Tatsiana</a>
