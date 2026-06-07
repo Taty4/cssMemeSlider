@@ -209,6 +209,7 @@ label {
 .controls-label {
   display: flex;
   gap: 0.5rem;
+  margin: 0.8rem 0;
 }
 
 .footer p {
