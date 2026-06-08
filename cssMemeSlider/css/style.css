@@ -72,8 +72,8 @@ body {
 
 .header-circle {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   background-color: var(--bgc-small);
 }
@@ -133,7 +133,9 @@ label {
   height: 1rem;
   border-radius: 50%;
   background-color: gray;
-  transition: background-color 0.3s;
+  transition:
+    background-color,
+    transform 0.3s;
 }
 
 #slide-1:checked ~ .slider-bgc .slider-track,
@@ -180,6 +182,14 @@ label {
 #slide-4:checked ~ .wrapper-texts-controls label:nth-child(4) .dot,
 #slide-5:checked ~ .wrapper-texts-controls label:nth-child(5) .dot {
   background-color: brown;
+}
+
+#slide-1:active ~ .wrapper-texts-controls label:nth-child(1) .dot,
+#slide-2:active ~ .wrapper-texts-controls label:nth-child(2) .dot,
+#slide-3:active ~ .wrapper-texts-controls label:nth-child(3) .dot,
+#slide-4:active ~ .wrapper-texts-controls label:nth-child(4) .dot,
+#slide-5:active ~ .wrapper-texts-controls label:nth-child(5) .dot {
+  transform: scale(1.3);
 }
 
 .wrapper-texts-controls {
